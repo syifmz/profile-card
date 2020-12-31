@@ -41,6 +41,8 @@ body {
   border-radius: 50%;
   position: relative;
   top: 77px;
+  border-style: solid;
+  border-color: white;
 }
 
 /* card body */
