@@ -43,6 +43,7 @@ body {
   top: 77px;
   border-style: solid;
   border-color: white;
+  border-width: 4px;
 }
 
 /* card body */
