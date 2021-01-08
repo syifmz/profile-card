@@ -6,19 +6,26 @@ body {
   width: 100vw;
   height: 100vh;
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
+  background-image: url("profile-card-component-main/images/bg-pattern-top.svg"), url("profile-card-component-main/images/bg-pattern-top.svg");
+  background-color: hsl(185, 75%, 39%);
+  background-position: left -55vw top -55vw, right -35vw bottom -80vw;
+  background-repeat: no-repeat;
+  background-size: 100vw;
+  background-attachment: fixed;
 }
 
-@media (min-width: 100px) {
+@media (min-width: 375px) and (min-height: 667px) {
   body {
     background-image: url("profile-card-component-main/images/bg-pattern-top.svg"), url("profile-card-component-main/images/bg-pattern-top.svg");
     background-color: hsl(185, 75%, 39%);
-    background-position: left -55vw top -55vw, right -35vw bottom -80vw;
+    background-position: left -45vw top -50vw, right -45vw bottom -40vw;
     background-repeat: no-repeat;
     background-size: 100vw;
-    background-attachment: fixed;
+  }
+  .card {
+    transform: scale(2.5);
   }
 }
 
@@ -58,10 +65,17 @@ body {
 
 /* card body */
 .card-body {
-  padding: 0;
+  padding: 20px;
 }
 
 /* card footer */
 .card-footer {
-  display: inline-block;
+  display: inline;
+  line-height: 1.5;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+p {
+  margin-bottom: 0;
 }
