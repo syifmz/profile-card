@@ -11,7 +11,7 @@ body {
   align-items: center;
 }
 
-@media (min-width: 375px) {
+@media (min-width: 100px) {
   body {
     background-image: url("profile-card-component-main/images/bg-pattern-top.svg"), url("profile-card-component-main/images/bg-pattern-top.svg");
     background-color: hsl(185, 75%, 39%);
