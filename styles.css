@@ -1,6 +1,5 @@
 /* body */
 body {
-  font-size: 12px;
   text-align: center;
   font-family: Kumbh Sans;
   width: 100vw;
@@ -8,74 +7,83 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-image: url("profile-card-component-main/images/bg-pattern-top.svg"), url("profile-card-component-main/images/bg-pattern-top.svg");
+  background-image: url("profile-card-component-main/images/bg-pattern-top.svg"), url("profile-card-component-main/images/bg-pattern-bottom.svg");
   background-color: hsl(185, 75%, 39%);
   background-position: left -55vw top -55vw, right -35vw bottom -80vw;
   background-repeat: no-repeat;
   background-size: 100vw;
-  background-attachment: fixed;
 }
 
-@media (min-width: 375px) and (min-height: 667px) {
+@media screen and (max-width: 380px) {
   body {
-    background-image: url("profile-card-component-main/images/bg-pattern-top.svg"), url("profile-card-component-main/images/bg-pattern-top.svg");
-    background-color: hsl(185, 75%, 39%);
     background-position: left -45vw top -50vw, right -45vw bottom -40vw;
-    background-repeat: no-repeat;
     background-size: 100vw;
-  }
-  .card {
-    transform: scale(2.5);
   }
 }
 
 .card {
-  width: 20rem;
+  width: 350px;
+  height: 375px;
+  max-width: 90vw;
+  max-height: 90vh;
   border: 0;
-  border-radius: 15px;
+  border-radius: 1rem;
 }
 
 /* card header */
 .card-header {
   padding: 0;
-  height: 8rem;
+  height: 40%;
   margin: 0;
   background: url(profile-card-component-main/images/bg-pattern-card.svg);
 }
+
 .card-age,
 .card-address, p {
   color: hsl(0, 0%, 59%);
 }
+
 .card-name, h5 {
-  font-size: 18px;
+  font-size: 1.125rem;
   font-weight: bold;
   margin: 0;
 }
+
 .card-name {
-  padding-top: 75px;
+  padding-top: 3rem;
 }
+
+.card-address {
+  padding-top: 0.5rem;
+}
+
 .profile-img {
   border-radius: 50%;
   position: relative;
-  top: 77px;
+  top: 64%;
   border-style: solid;
   border-color: white;
-  border-width: 4px;
+  border-width: 0.25rem;
 }
 
 /* card body */
 .card-body {
-  padding: 20px;
+  padding: 1.25rem;
 }
 
 /* card footer */
 .card-footer {
   display: inline;
   line-height: 1.5;
-  padding-top: 20px;
-  padding-bottom: 20px;
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
 }
 
 p {
   margin-bottom: 0;
+  font-size: 0.875rem;
+}
+
+.col-4 p {
+  font-size: 0.75rem;
 }
